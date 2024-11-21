@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>survey form"></form></title>
+    <style>
+        button {
+            background-color: rgb(147, 196, 147);
+        }
+        body{
+            background-color: rgb(197, 214, 202);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1> <!-- Requirement #1 and #2 -->
+    <p id="description">Please fill out this survey to help us improve our services.</p> <!-- Requirement #3 and #4 -->
+
+    <form id="survey-form"> <!-- Requirement #5 -->
+      <!-- Name Field -->
+        <label id="name-label" for="name">Name:</label> <!-- Requirement #19 and #22 -->
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br> <!-- Requirement #6, #7, #8, #9, #28 -->
+
+        <!-- Email Field -->
+        <label id="email-label" for="email">Email:</label> <!-- Requirement #20 and #23 -->
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br> <!-- Requirement #10, #11, #12, #13, #29 -->
+
+        <!-- Number Field -->
+        <label id="number-label" for="number">Age:</label> <!-- Requirement #21 and #24 -->
+        <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="100" required><br>
+
+        <!-- Dropdown Field -->
+        <label for="dropdown">Select your current role:</label> <!-- Requirement #31 -->
+        <select id="dropdown" name="role"> <!-- Requirement #32, #33 -->
+            <option value="student">Student</option>
+            <option value="job">Working Professional</option>
+        </select>
+
+        
+        <p>What is your experience level?</p>
+        <input type="radio" id="beginner" name="experience" value="beginner">
+        <label for="beginner">Beginner</label>
+        <input type="radio" id="intermediate" name="experience" value="intermediate">
+        <label for="intermediate">Intermediate</label>
+
+        
+        <p>Which topics are you interested in?</p>
+        <input type="checkbox" id="html" name="interest" value="HTML">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="interest" value="CSS">
+        <label for="css">CSS</label><br>
+
+    
+        <label for="comments">Any additional comments:</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea><br>
+
+    
+        <button type="submit" id="submit">Submit</button> 
+     
+    </form>
+</body>
+</html>
